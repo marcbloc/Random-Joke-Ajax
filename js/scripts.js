@@ -8,7 +8,7 @@ function getJoke() {
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', url);
 	xhr.addEventListener('load', function () {
-		var response = JSON/parse(xhr.rsponse);
+		var response = JSON.parse(xhr.rsponse);
 		paragraph.innerHTML = response.value.joke;
 	});
 	xhr.send();
